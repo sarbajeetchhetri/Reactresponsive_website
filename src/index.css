@@ -1,5 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
 
 *{
   margin: 0;
@@ -75,12 +77,34 @@
 #header h2 {
   color: #484848;
 }
-/* 
-#header .image-fluid animated{
-
-} */
 
 
 .header-image{
-  text-align: top;
+  text-align: left;
+} 
+
+/* Animation of Images */
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+} 
+
+@-webkit-keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
 }
+
+@keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+

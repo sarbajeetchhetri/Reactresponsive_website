@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import web from "../Images/aboutho.jpg";
+import Common from "./Common";
 
-const About=()=>{
-    return (
-        <>
-            <h1>This is  a ABout Page </h1>
-        </>
-    )
-}
+const About = () => {
+  return (
+    <>
+      <Common
+        name="Welcome to About Page"
+        imgsrc={web}
+        visit="/contact"
+        btnname=" Contact Now"
+      />
+    </>
+  );
+};
 
-export default About
+export default About;
