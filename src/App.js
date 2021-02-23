@@ -7,12 +7,14 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Navbar from "./Pages/Navbar";
 import { Switch, Route, Redirect } from "react-router-dom";
+import Footer from "./Pages/Fotter";
 
 
 const App = () => {
   return (
     <>
     <Navbar/>
+   
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/services" component={Services} />
@@ -22,6 +24,8 @@ const App = () => {
 
 
       </Switch>
+
+      <Footer/>
     </>
   );
 };
